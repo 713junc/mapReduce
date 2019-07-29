@@ -37,8 +37,10 @@ if __name__ == '__main__':
 """
 Input Data: Text from a book
 1. Mapper is going to break up every line into individual words.
-2. MapReduce will group together every count for every word.
-3. Reducer will add it all up.
+2. Combiner is going to sum the words.
+3. Reducer1 will have a special output format.
+4. Reducer2 will print all the results in ascending order.
+
 
 # MRStep object specifies a mapper, combiner and reducer.
   All three are optiional, but must have at least one.
